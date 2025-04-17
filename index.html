@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo</title>
+    <link rel="stylesheet" href="todo.css" />
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <h2>todolist</h2>
+    <div class="container">
+      <button class="add-todo btn">Add Todo</button>
+      <button class="clear">Clear All</button>
+
+      <form action="" id="new-todo">
+        <h3>Add a Todo Task</h3>
+
+        <label for="title">Title</label>
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="enter task"
+          required
+        />
+
+        <label for="des">Description</label>
+        <input
+          type="text"
+          name="des"
+          id="des"
+          placeholder="enter description"
+          required
+        />
+
+        <label for="due-date">Due Date</label>
+        <input type="date" name="due-date" id="due-date" required />
+
+        <label for="priority">Priority</label>
+        <select name="priority" id="priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <div class="form-btn">
+          <input type="submit" value="Add Todo" class="b1 btn" />
+          <button type="button" class="btn close">Close</button>
+        </div>
+      </form>
+
+      <!-- todo list -->
+      <div class="list"></div>
+    </div>
+  </body>
+</html>
