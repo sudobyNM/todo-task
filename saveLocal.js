@@ -9,7 +9,16 @@ export function getData(key) {
 
     render();
   } else {
-    myTodoList = [];
+    myTodoList.length = 0;
+    myTodoList.push({
+      title: "my todo",
+      des: "task created",
+      duedate: "2025-10-01",
+      priority: "low",
+      checked: true,
+    });
+    saveData("tasklist", myTodoList);
+    render();
   }
   console.log(data);
 }
